@@ -38,11 +38,18 @@ nav{
     text-decoration: none;
     color: rgb(63, 9, 9);
 }
-
-
-
-
-
+h1{
+    text-align: center;
+}
+.content{
+    margin: 5%;
+}
+img talk-robot{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 footer{
     text-align: center;
 }
