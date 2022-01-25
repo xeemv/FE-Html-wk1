@@ -5,9 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wk 1 Front-End Assignment</title>
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Estonia', cursive;
+}
+.container{
+    width: 100%;    
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+}
+.logo{
+    width: 260px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* position: fixed; */
+}
+nav{
+    flex: 1;
+    padding-left: 80px;
+    text-align: right;
+}
+.nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(63, 9, 9);
+}
+h1{
+    text-align: center;
+}
+.content{
+    margin: 5%;
+}
+.kanban{
+    width: 500px;
+}
+/* .tip-cal{
+    
+}
+.talk-robot{
+    width: 20px;
+} */
+footer{
+    text-align: center;
+}
+</style>
 </head>
 <body>
-    <link rel="stylesheet" type="text/css" href="../css/index2.css">
+    <div id="top"></div>
+    <!-- <link rel="stylesheet" type="text/css" href="../css/index2.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
     <div class="container">
         <div class="navbar">
@@ -47,7 +108,7 @@
             <li>Tip Calculator</li>
             <ul>
                 <li>Image: 
-                <br><img src="../images/tip-calculator.PNG"></li>
+                <br><img class="tip-cal" src="../images/tip-calculator.PNG" width="500px" height="350px"></li>
                 <!-- <br>
                 <br><li>Video: Please select the play and pause button to view the video of this project.
                 <br>
@@ -68,7 +129,7 @@
             <li>Talking Robot</li>
             <ul>
                 <li>Image: 
-                <br><img class="talking-robot" src="../images/talking-robot.PNG"></li>
+                <br><img class="talking-robot" src="../images/talking-robot.PNG" width="500px" height="350px"></li>
                 <!-- <br>
                 <li>Video: Please select the little picture-in-picture icon on the right side of this video and adjust the size to your preference. 
                 <br> -->
@@ -81,10 +142,8 @@
                 </video> -->
                 <!-- <video src="../videos/talking robot.AdobeCreativeCloudExpress.mp4" width="600px" height="400px"></video> -->
 
-            </ul>
+            <!-- </ul> -->
         </ul>
-
-
     </div>
     <footer>Project Photo Page</footer>
 </body>
@@ -103,4 +162,5 @@
     </script>  -->
 
 <!-- I started including this script from w3 school but realized my video was playing w/o it. I'm going to leave this here for reference anyways. -->
+<p align="center">(<a href="#top">back to top</a>)</p>
 </html>
