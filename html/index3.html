@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Page</title>
+    <title>Contact Me</title>
     <style>
-        body{
+    body{
+        background-image: url(../images/background.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         margin: 0;
         padding: 0;
         font-family: 'Estonia', cursive;
@@ -30,6 +34,7 @@
         width: 260px;
         cursor: pointer;
         border-radius: 5px;
+        /* margin-top: 5%; */
         /* position: fixed; */
     }
     nav{
@@ -52,6 +57,67 @@
     .content{
         margin: 5%;
     }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    /* https://www.w3schools.com/howto/howto_css_table_center.asp for help w/ formating my table */
+    .container2{
+        padding: 30px;
+        margin: 20%;
+        width: 50%;
+        height: 80vh;
+        /*background: #fdc8e9;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-radius: 5px;
+        background-color: #fce5e5;
+        box-sizing: border-box;
+    }
+    form{
+        /* background: rgb(253, 211, 240); */
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        width: 90%;
+        max-width: 600px;
+        border-radius: 10px; 
+    }
+    input[type=text], select, textarea {
+        /* width: 60%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical; */
+        border: 0;
+        border-radius: 4px;
+        margin: 10px 0 16px;
+        padding: 20px;
+        outline: none;
+        background: rgb(238, 210, 200);
+    }
+    input[type=submit] {
+        background-color: #e4bff5;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        align-items:stretch;
+    }
+    input[type=submit]:hover {
+        background-color: #a06ff0;
+    }
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        /* font-size: 2rem; */
+    }
     footer{
         text-align: center;
     }
@@ -73,7 +139,58 @@
             </nav>
         </div>   
     </div>
-    <footer>Home Page</footer>
+    
+    <h1>Contact Me</h1>
+    <br>
+    <br>
+    <div class="container3">
+        <h3>    
+        <table class="table">
+            <tr>
+              <th>Website</th>
+              <th>URL Link</th>
+              <!-- <th>Country</th> -->
+            </tr>
+            <tr>
+                <td><a href="https://www.google.com/gmail/about/">Email</a></td>
+                <td>Click here to send an email to me at <a href="mailto:xeeyang08@gmail.com?cc=insertanotheremail@xyz.com&bcc=insertsecretemail@xyz.com&subject=Mail from xyz.com&body=Dear xyz.com" target="_blank">xeeyang08@gmail.com</a></td>
+                <!-- https://careerkarma.com/blog/html-email-link/ to help create the email pop up for a visiter to the page -->
+            </tr>
+            <tr>
+              <td><a href="https://github.com/">GitHub</a></td>
+              <td><a href="https://github.com/xeemv">https://github.com/xeemv</a></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.codewars.com">Codewars</td>
+              <td><a href="https://www.codewars.com/dashboard">https://www.codewars.com/users/xeemv</a></td>
+              <!-- <td>Mexico</td> -->
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/">linkedin</a></td>
+                <td><a href="https://www.linkedin.com/in/xeemv/">https://www.linkedin.com/in/xeemv/</a></td>
+            </tr>
+          </table>
+        </h3>
+    </div>
+    <div class="container2">
+        <form>
+        <label for="start">Today's date:</label>
+        <input type="date" id="start" name="Today"
+        value="2018-07-22" min="1950-01-01" max="2050-12-31" required>
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date -->
+        <br>
+        <label for="username">Username: </label><input id="name" type="text" required> <!--<input type="submit"  value="submit">-->
+        <br>
+        <label for="username">Email: </label><input id="name" type="text" required> <!--<input type="submit"  value="submit">-->
+        <br>
+        <label for="message">Message:</label><textarea id="subject" name="subject" placeholder="Leave a comment.." style="height:200px"></textarea><input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- <br>
+    <br> -->
+
+
+    <footer>Contact Me</footer>
 </body>
 <p align="center">(<a href="#top">back to top</a>)</p>
 </html>
